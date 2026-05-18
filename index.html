@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countline</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="control-panel" aria-labelledby="app-title">
+      <div class="title-row">
+        <div>
+          <p class="eyebrow">Follow the next move</p>
+          <h1 id="app-title">Countline</h1>
+        </div>
+        <span class="status-pill" id="saveStatus">Saved locally</span>
+      </div>
+
+      <label class="input-label" for="numberInput">Paste comma-separated numbers</label>
+      <textarea
+        id="numberInput"
+        spellcheck="false"
+        placeholder="124, 8701, 92, 45003, 18"
+      ></textarea>
+
+      <div class="action-row">
+        <button class="secondary-button" id="saveListButton" type="button">Save list</button>
+        <label class="file-button" for="fileInput">Upload .txt</label>
+        <input id="fileInput" class="file-input" type="file" accept=".txt,text/plain">
+        <button class="ghost-button" id="resetProgressButton" type="button">Reset progress</button>
+      </div>
+    </section>
+
+    <section class="number-stage" aria-live="polite">
+      <p class="stage-label">Current number</p>
+      <div class="current-number" id="currentNumber">No list</div>
+
+      <button class="next-button" id="nextButton" type="button">Next number</button>
+
+      <div class="progress-wrap" aria-label="Progress through saved numbers">
+        <div class="progress-meta">
+          <span id="progressText">0 of 0 shown</span>
+          <span id="remainingText">0 left</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
