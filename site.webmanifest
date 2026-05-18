@@ -1,0 +1,24 @@
+{
+  "name": "Countline",
+  "short_name": "Countline",
+  "description": "Follow a saved sequence of numbers one step at a time.",
+  "start_url": "/countline/",
+  "scope": "/countline/",
+  "display": "standalone",
+  "background_color": "#070812",
+  "theme_color": "#070812",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

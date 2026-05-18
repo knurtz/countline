@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Countline icon">
+  <defs>
+    <linearGradient id="tile" x1="8" y1="5" x2="58" y2="61" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101226"/>
+      <stop offset="0.52" stop-color="#0b1024"/>
+      <stop offset="1" stop-color="#160a2c"/>
+    </linearGradient>
+    <linearGradient id="line" x1="14" y1="47" x2="50" y2="17" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#47f5ff"/>
+      <stop offset="0.52" stop-color="#9d6bff"/>
+      <stop offset="1" stop-color="#ff4fd8"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#tile)"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="13.5" fill="none" stroke="#47f5ff" stroke-opacity="0.28" stroke-width="3"/>
+  <path d="M16 46 L48 18 L22 20 L46 44" fill="none" stroke="url(#line)" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <circle cx="16" cy="46" r="6.2" fill="#47f5ff"/>
+  <circle cx="48" cy="18" r="6.2" fill="#9d6bff"/>
+  <circle cx="22" cy="20" r="6.2" fill="#ff4fd8"/>
+  <circle cx="46" cy="44" r="6.2" fill="#47f5ff"/>
+</svg>
